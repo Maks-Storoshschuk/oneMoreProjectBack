@@ -61,10 +61,6 @@ const updateUserValidator = Joi.object({
         .min(2)
         .max(30)
         .trim(),
-    email: Joi
-        .string()
-        .regex(regExp.emailRegExp)
-        .trim(),
     type: Joi
         .string()
         .allow(
@@ -78,5 +74,5 @@ const updateUserValidator = Joi.object({
 });
 
 module.exports = {
-    createUserValidator
+    createUserValidator,updateUserValidator
 };

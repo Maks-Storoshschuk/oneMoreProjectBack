@@ -4,7 +4,7 @@ const {constants} = require('../config');
 const passwordService = require('../services/password.service');
 
 const userSchema = new Schema({
-    username: {
+    userName: {
         type: String,
         trim: true,
     },

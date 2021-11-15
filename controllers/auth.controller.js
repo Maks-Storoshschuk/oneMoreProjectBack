@@ -1,5 +1,5 @@
 const {oAuth} = require('../dataBase');
-const {jwtService} = require('../services/jwt.service');
+const jwtService = require('../services/jwt.service');
 
 module.exports = {
     logIn: async (req, res, next) => {

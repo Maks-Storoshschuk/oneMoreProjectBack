@@ -9,15 +9,9 @@ router.post(
     userMiddleware.createUserMiddleware,
     userController.createUser
 );
-router.put(
-    '/',
-    authMiddleware.checkAccessToken,
-    userMiddleware.updateUserMiddleware,
-    userMiddleware.userIdMiddleware,
-    userController.updateUser
-);
 router.get(
     '/',
+    authMiddleware.checkAccessToken,
     userController.getUsers
 );
 
@@ -27,10 +21,10 @@ router.delete(
     userMiddleware.userIdMiddleware,
     userController.deleteUser
 );
-
 router.put(
     '/:user_id',
     authMiddleware.checkAccessToken,
+    userMiddleware.updateUserMiddleware,
     userMiddleware.userIdMiddleware,
     userController.updateUser
 );

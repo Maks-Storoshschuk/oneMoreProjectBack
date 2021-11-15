@@ -2,7 +2,7 @@ const {oAuth, User} = require('../dataBase');
 const {authValidator} = require('../validators');
 const {constants, tokenTypeEnum} = require('../config');
 const {ErrorBuilder, Errors} = require('../errorHandler');
-const {jwtService} = require('../services/jwt.service');
+const jwtService = require('../services/jwt.service');
 
 module.exports = {
     isAuthValid: (req, res, next) => {

@@ -40,7 +40,6 @@ module.exports = {
 
     isUserValid: (req, res, next) => {
         try {
-            console.log(req.body);
             const {error, value} = userValidator.createUserValidator.validate(req.body);
 
 

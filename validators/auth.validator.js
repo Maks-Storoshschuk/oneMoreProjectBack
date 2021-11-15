@@ -2,7 +2,7 @@ const Joi = require('joi');
 
 const {regExp} = require('../config');
 
-const authValidatorEmail = Joi.object({
+const authValidator = Joi.object({
     email: Joi
         .string()
         .regex(regExp.emailRegExp)
@@ -16,5 +16,5 @@ const authValidatorEmail = Joi.object({
 });
 
 module.exports = {
-    authValidatorEmail
+    authValidator
 };
