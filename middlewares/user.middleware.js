@@ -4,7 +4,7 @@ const {ErrorBuilder, Errors} = require('../errorHandler');
 const {User} = require('../dataBase');
 
 module.exports = {
-    createUserMiddleware: async (req, res, next) => {
+    checkEmailMiddleware: async (req, res, next) => {
         try {
             const {email} = req.body;
 

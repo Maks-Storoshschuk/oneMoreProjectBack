@@ -6,7 +6,7 @@ const {userController} = require('../controllers');
 router.post(
     '/',
     userMiddleware.isUserValid,
-    userMiddleware.createUserMiddleware,
+    userMiddleware.checkEmailMiddleware,
     userController.createUser
 );
 router.get(
