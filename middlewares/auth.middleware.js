@@ -60,6 +60,7 @@ module.exports = {
     },
 
     checkAccessToken: async (req, res, next) => {
+        console.log(req.body);
         try {
             const token = req.get(constants.AUTHORIZATION);
 

@@ -58,7 +58,7 @@ module.exports = {
                 email,
                 userName,
                 firstName,
-                lestName,
+                lastName,
                 type,
                 password
             } = req.body;
@@ -71,7 +71,7 @@ module.exports = {
                     email,
                     userName,
                     firstName,
-                    lestName,
+                    lastName,
                     type,
                     password: hashedPassword
                 }, {new: true});
@@ -82,7 +82,7 @@ module.exports = {
                 email,
                 userName,
                 firstName,
-                lestName,
+                lastName,
                 type
             }, {new: true});
 
