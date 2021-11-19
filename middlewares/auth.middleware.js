@@ -86,7 +86,6 @@ module.exports = {
     checkRefreshToken: async (req, res, next) => {
         try {
             const token = req.get(constants.AUTHORIZATION);
-
             if (!token) {
                 ErrorBuilder(Errors.err401);
             }
