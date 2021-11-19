@@ -9,7 +9,7 @@ const {tokenTypeEnum} = require('../config');
 
 module.exports = {
     generateTokenPair: () => {
-        const access_token = jwt.sign({}, JWT_ACCESS_SECRET, {expiresIn: '1d'});
+        const access_token = jwt.sign({}, JWT_ACCESS_SECRET, {expiresIn: '15m'});
         const refresh_token = jwt.sign({}, JWT_REFRESH_SECRET, {expiresIn: '30d'});
 
         return {
